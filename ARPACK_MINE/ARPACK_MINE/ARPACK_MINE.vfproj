@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{280F9112-4C92-4CD7-92D2-59C34DA43E96}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="impi.lib mkl_blas95_lp64.lib mkl_lapack95_lp64.lib mkl_scalapack_lp64.lib mkl_intel_lp64.lib mkl_intel_thread.lib mkl_core.lib libiomp5md.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole" AdditionalDependencies="impi.lib mkl_blas95_lp64.lib mkl_lapack95_lp64.lib mkl_scalapack_lp64.lib mkl_intel_lp64.lib mkl_intel_thread.lib mkl_core.lib libiomp5md.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd;h;inc"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="Example">
+		<File RelativePath=".\Example\Local_ARPACK_TEST_EXAMPLES.f90"/>
+		<File RelativePath=".\Example\Test_Case1.f90"/>
+		<File RelativePath=".\Example\Test_Case2.f90"/>
+		<File RelativePath=".\Example\Test_Case3.f90"/>
+		<File RelativePath=".\Example\Test_Case4.f90"/>
+		<File RelativePath=".\Example\Test_Case5.f90"/>
+		<File RelativePath=".\Example\Test_Case6.f90"/></Filter>
+		<Filter Name="Local_arpack">
+		<File RelativePath=".\Local_arpack\zgetv0.f90"/>
+		<File RelativePath=".\Local_arpack\znaitr.f90"/>
+		<File RelativePath=".\Local_arpack\znapps.f90"/>
+		<File RelativePath=".\Local_arpack\znaup2.f90"/>
+		<File RelativePath=".\Local_arpack\znaupd.f90"/>
+		<File RelativePath=".\Local_arpack\zneigh.f90"/>
+		<File RelativePath=".\Local_arpack\zneupd.f90"/>
+		<File RelativePath=".\Local_arpack\zngets.f90"/>
+		<File RelativePath=".\Local_arpack\zsortc.f90"/>
+		<File RelativePath=".\Local_arpack\zstatn.f90"/></Filter>
+		<Filter Name="Local_arpack_util">
+		<File RelativePath=".\Local_arpack_util\arscnd.f"/>
+		<File RelativePath=".\Local_arpack_util\cmout.f"/>
+		<File RelativePath=".\Local_arpack_util\cvout.f"/>
+		<File RelativePath=".\Local_arpack_util\dmout.f"/>
+		<File RelativePath=".\Local_arpack_util\dvout.f"/>
+		<File RelativePath=".\Local_arpack_util\icnteq.f"/>
+		<File RelativePath=".\Local_arpack_util\icopy.f"/>
+		<File RelativePath=".\Local_arpack_util\iset.f"/>
+		<File RelativePath=".\Local_arpack_util\iswap.f"/>
+		<File RelativePath=".\Local_arpack_util\ivout.f"/>
+		<File RelativePath=".\Local_arpack_util\smout.f"/>
+		<File RelativePath=".\Local_arpack_util\svout.f"/>
+		<File RelativePath=".\Local_arpack_util\zmout.f"/>
+		<File RelativePath=".\Local_arpack_util\zvout.f"/></Filter>
+		<Filter Name="Paral_arpack">
+		<File RelativePath=".\Paral_arpack\pcontext.f90"/>
+		<File RelativePath=".\Paral_arpack\pdznorm2.f90"/>
+		<File RelativePath=".\Paral_arpack\pzgetv0.f90"/>
+		<File RelativePath=".\Paral_arpack\pzlarnv.f90"/>
+		<File RelativePath=".\Paral_arpack\pznaitr.f90"/>
+		<File RelativePath=".\Paral_arpack\pznapps.f90"/>
+		<File RelativePath=".\Paral_arpack\pznaup2.f90"/>
+		<File RelativePath=".\Paral_arpack\pznaupd.f90"/>
+		<File RelativePath=".\Paral_arpack\pzneigh.f90"/>
+		<File RelativePath=".\Paral_arpack\pzneupd.f90"/>
+		<File RelativePath=".\Paral_arpack\pzngets.f90"/></Filter>
+		<Filter Name="Paral_arpack_util">
+		<File RelativePath=".\Paral_arpack_util\pcmout.f"/>
+		<File RelativePath=".\Paral_arpack_util\pcvout.f"/>
+		<File RelativePath=".\Paral_arpack_util\pdlamch10.f"/>
+		<File RelativePath=".\Paral_arpack_util\pdmout.f"/>
+		<File RelativePath=".\Paral_arpack_util\pdvout.f"/>
+		<File RelativePath=".\Paral_arpack_util\pivout.f"/>
+		<File RelativePath=".\Paral_arpack_util\psmout.f"/>
+		<File RelativePath=".\Paral_arpack_util\psvout.f"/>
+		<File RelativePath=".\Paral_arpack_util\pzmout.f"/>
+		<File RelativePath=".\Paral_arpack_util\pzvout.f"/></Filter>
+		<File RelativePath=".\ARPACK_MINE.f90"/>
+		<File RelativePath=".\DEBUG_MODULE.f90"/>
+		<File RelativePath=".\PCONTEXT_MODULE.f90"/>
+		<File RelativePath=".\STAT_MODULE.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
