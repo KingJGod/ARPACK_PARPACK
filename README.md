@@ -38,3 +38,7 @@ Various test files are being pasted in system in Windows\Linux\Mac OS
     !|                                                                    |
     !=======================================================================
 
+BLAS LAPACK and MPI Libraries are needed.
+In windows environment, VS2012 + Intel Visual Fortran 2017 with Intel MPI have been used.
+And in Mac OS and Linux System. Both Intel MPI and MPICH have been tested. 
+Intel MKL Library has been used to provide the basic environment for using package. You can modified the linking package by yourself.
