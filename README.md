@@ -42,3 +42,14 @@ BLAS LAPACK and MPI Libraries are needed.
 In windows environment, VS2012 + Intel Visual Fortran 2017 with Intel MPI have been used.
 And in Mac OS and Linux System. Both Intel MPI and MPICH have been tested. 
 Intel MKL Library has been used to provide the basic environment for using package. You can modified the linking package by yourself.
+
+COMPILING THE CODE IN MAC OS/Linux Systems:
+"cd ARPACK_MINE/ARPACK_MINE"
+modified the Makefile
+" make "
+And then you could get the excutable file "ARPACK_TEST" and lib "myparpack.a" in the Lib file folder
+
+COMPILING THE CODE IN WINDOWS SYSTEM:
+You can open the ARPACK_MINE.vfproj project file and run the project after linking the MPI and MKL library.
+
+
