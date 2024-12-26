@@ -1,14 +1,17 @@
 #COMPILE THE FILE
-FC := mpiifort
+FC := mpifort
 AR := ar
-FCFLAGS = -c -xHost -O2 -fPIC
+FCFLAGS = -c -O2 -fPIC
 FLFLAGS =
 #MKLROOT = /opt/intel/mkl 
-INC = -I$(MKLROOT)/include/intel64/lp64 -I$(MKLROOT)/include
-LIBS = $(MKLROOT)/lib/intel64/libmkl_blas95_lp64.a \
-       $(MKLROOT)/lib/intel64/libmkl_lapack95_lp64.a -L$(MKLROOT)/lib/intel64 \
+#INC = 
+#LIBS = -L/Users/xiyoucheng/Documents/My_Works/StabilityWork/Global_Linear_Stability_Tools/CLSTOF/biglobal_tools/blaslapack -lfblas -lflapack
+
+MKLROOT = /opt/intel/mkl 
+INC = -I/opt/intel/mkl/include
+LIBS = -L/opt/intel/mkl/lib/intel64 \
 		-lmkl_intel_lp64 -lmkl_intel_thread \
-		-lmkl_core -liomp5 -lpthread -lm -ldl -lstdc++
+		-lmkl_core -liomp5 -lpthread -lm -ldl -lc++
 
 #DIRs
 #DIRs = Local_arpack Local_arpack_util Paral_arpack Paral_arpack_util

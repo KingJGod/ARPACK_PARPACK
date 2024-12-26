@@ -42,7 +42,7 @@
     CALL MPI_COMM_RANK( MPI_COMM_WORLD, myid, ierr )
     
     if( myid == 0) then
-    CALL LOCAL_ARPACK_TEST_EXAMPLES
+     CALL LOCAL_ARPACK_TEST_EXAMPLES
     endif
     
     CALL MPI_BARRIER(MPI_COMM_WORLD,ierr)
